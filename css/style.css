@@ -1,44 +1,5 @@
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-ul[class],
-ol[class] {
-  padding: 0;
-}
-
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-ol[class],
-li,
-figure,
-figcaption,
-blockquote,
-dl,
-dd {
-  margin: 0;
-}
-
 ul {
   list-style: none;
-}
-
-img {
-  max-width: 100%;
-  display: block;
 }
 
 input,
@@ -60,7 +21,6 @@ textarea {
 
 button {
   background-color: transparent;
-  padding: 0;
   cursor: pointer;
   border: none;
 }
@@ -70,6 +30,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.02em;
   color: #434445;
   background-color: #ffffff;
 }
@@ -82,40 +43,33 @@ address {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.2;
-  color: #2E2F42;
+  letter-spacing: 0.03em;
+  line-height: 1.17;
+  color: #4d5ae5;
   text-transform: uppercase;
 }
 
-.logo-span {
-  color: #4D5AE5;
+.header__logo-span {
+ color: #2e2f42; 
 }
 
-.header__list {
+.header__link {
   font-weight: 500;
+  color: #2e2f42;
 }
 
-.header__link:hover {
-  color: #404BBF;
-}
-
-.header__link:active {
-  color: #404BBF;
-  border-bottom: 4px solid #404BBF;
-}
-
+.header__link:hover,
 .header__link:focus {
-  border: 1px dashed #9747ff;
-  border-radius: 5px;
+  color: #404bbf;
 }
 
-.address__link:hover {
-  color: #404BBF;
+.address__link {
+  color: #434455;
 }
 
+.address__link:hover,
 .address__link:focus {
-  border: 1px dashed #9747ff;
-  border-radius: 5px;
+  color: #404bbf;
 }
 
 .hero {
@@ -125,19 +79,21 @@ address {
 .hero__title {
   font-weight: 700;
   font-size: 56px;
-  line-height: 1;
+  line-height: 1.07;
   color: #ffffff;
   text-align: center;
 }
 
 .hero__btn {
   font-weight: 500;
+  letter-spacing: 0.04em;
   color: #ffffff;
-  background-color: #4D5AE5;
+  background-color: #4d5ae5;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
-.hero__btn:hover {
+.hero__btn:hover,
+.hero__btn:focus {
   background-color: #404BBF;
 }
 
@@ -145,28 +101,25 @@ address {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  color: #2E2F42;
+  color: #2e2f42;
 }
 
 .team {
-  background-color: #F4F4FD;
+  background-color: #f4f4fd;
 }
 
 .title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.1;
+  line-height: 1.11;
+  text-transform: capitalize;
   color: #2E2F42;
   text-align: center;
 }
 
 .team__item {
-  width: 264px;
-  height: 380px;
-  border-radius: 0 0 4px 4px;
-  background-color: #fff;
+  background-color: #ffffff;
   text-align: center;
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .team__title,
@@ -174,22 +127,14 @@ address {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  color: #2E2F42;
-}
-
-.portfolio__item {
-  border: 1px solid #E7E9FC;
-  border-top: 0;
+  color: #2e2f42;
 }
 
 .footer {
-  background-color: #2E2F42;
+  background-color: #2e2f42;
 }
 
-.footer__logo {
-  color: #F4F4FD;
-}
-
+.footer__logo-span,
 .footer__text {
-  color: #F4F4FD;
+  color: #f4f4fd;
 }
