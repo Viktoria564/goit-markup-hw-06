@@ -1,5 +1,11 @@
 ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
 }
 
 a {
@@ -10,7 +16,16 @@ a {
 button {
   background-color: transparent;
   cursor: pointer;
+  border: none;
 }
+
+img {
+  display: block;
+}
+
+.adress {
+  font-style: normal;
+} 
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -20,13 +35,50 @@ body {
   letter-spacing: 0.02em;
   color: #434455;
   background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-address {
-  font-style: normal;
+.header {
+  border-bottom: 1px solid #E7E9FC;
+}
+
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.section {
+  padding: 120px 0;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
+  display: inline-block;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -36,11 +88,24 @@ address {
   text-transform: uppercase;
 }
 
+.header__logo {
+  padding: 24px 0;
+  margin-right: 76px;
+}
+
+.header__list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
 .header__logo-span {
  color: #2e2f42; 
 }
 
 .header__link {
+  display: block;
+  padding: 24px 0;
   font-weight: 500;
   color: #2e2f42;
 }
@@ -50,7 +115,19 @@ address {
   color: #404bbf;
 }
 
+.address {
+  margin-left: auto;
+}
+
+.address__list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
 .address__link {
+  display: block;
+  padding: 24px 0;
   color: #434455;
 }
 
@@ -59,20 +136,30 @@ address {
   color: #404bbf;
 }
 
+.main {
+  flex-grow: 1;
+}
+
 .hero {
   background-color: #2E2F42;
+  padding: 188px 0;
 }
 
 .hero__title {
+  max-width: 496px;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: #ffffff;
   text-align: center;
+  margin: 0 auto 48px;
 }
 
 .hero__btn {
+  display: block;
+  padding: 16px 32px;
+  margin: 0 auto;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -80,11 +167,22 @@ address {
   letter-spacing: 0.04em;
   color: #ffffff;
   background-color: #4d5ae5;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 .hero__btn:hover,
 .hero__btn:focus {
   background-color: #404BBF;
+}
+
+.advantages__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages__item {
+  flex-basis: calc((100% - 71px) / 4);
 }
 
 .advantages__title {
@@ -93,6 +191,7 @@ address {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .team {
@@ -107,11 +206,27 @@ address {
   letter-spacing: 0.02em;
   color: #2E2F42;
   text-align: center;
+  margin-bottom: 72px;
+}
+
+.team__list {
+  display: flex;
+  gap: 24px;
 }
 
 .team__item {
   background-color: #ffffff;
   text-align: center;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.team__box {
+  padding: 32px 16px;
+}
+
+.team__title {
+  margin-bottom: 8px;
 }
 
 .team__title,
@@ -123,8 +238,37 @@ address {
   color: #2e2f42;
 }
 
+.portfolio__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+
+.portfolio__item {
+  flex-basis: calc((100% - 48px) / 3);
+}
+
+.portfolio__box {
+  padding: 32px 16px;
+  border-bottom: 1px solid #E7E9FC;
+  border-left: 1px solid #E7E9FC;
+  border-right: 1px solid #E7E9FC;
+}
+
+.portfolio__title {
+  margin-bottom: 7px;
+}
+
 .footer {
+  padding: 100px 0;
   background-color: #2e2f42;
+}
+
+.footer__logo {
+  margin-bottom: 16px;
+}
+.footer__text {
+  max-width: 264px;
 }
 
 .footer__logo-span,
