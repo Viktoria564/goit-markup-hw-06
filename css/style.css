@@ -160,6 +160,7 @@ body {
   display: block;
   padding: 16px 32px;
   margin: 0 auto;
+  min-width: 169px;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -178,7 +179,7 @@ body {
 
 .advantages__list {
   display: flex;
-  justify-content: space-between;
+  gap: 24px;
 }
 
 .advantages__item {
@@ -222,7 +223,7 @@ body {
 }
 
 .team__box {
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 
 .team__title {
@@ -256,7 +257,7 @@ body {
 }
 
 .portfolio__title {
-  margin-bottom: 7px;
+  margin-bottom: 8px;
 }
 
 .footer {
