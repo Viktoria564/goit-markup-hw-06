@@ -507,7 +507,6 @@ footer__form-input::placeholder {
   margin-bottom: 16px;
 }
 
-
 .modal__btn {
   height: 24px;
   width: 24px;
@@ -614,11 +613,6 @@ footer__form-input::placeholder {
 
 .modal__check-box {
   margin-bottom: 24px;
-}
-
-.modal__label-check {
-  display: flex;
-  align-items: center;
 }
 
 .modal__check-span {
